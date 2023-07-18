@@ -10,7 +10,19 @@
   <style>
     /* Your CSS styles go here */
   </style>
-  <script src="script.js"></script>
+  <script src="script.js">
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    
+    // Create gradient
+    var grd = ctx.createLinearGradient(0, 0, 200, 0);
+    grd.addColorStop(0, "red");
+    grd.addColorStop(1, "white");
+    
+    // Fill with gradient
+    ctx.fillStyle = grd;
+    ctx.fillRect(10, 10, 150, 80);
+  </script>
 </head>
 
 <body>
@@ -80,7 +92,12 @@
     </svg>
 
     <br>
+     <p>below this we use canvas with a little javascript usage to draw a trapezoid</p>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+    </canvas>
 
+    <br>
+    
     <ol>
       <li>Numbered List item 1</li>
       <li>Numbered List item 2</li>
