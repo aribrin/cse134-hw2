@@ -28,9 +28,10 @@
   </header>
 
   <main>
+    <h1>Welcome to the Sandbox!</h1>
     <aside>
-      <h3>This is the sandbox!</h3>
-      <p>For starters, we have different kinds of text..</p>
+      <h3>Today we are trying out html tags!</h3>
+      <p>For starters, we have different kinds of text.</p>
     </aside>
 
     <br>
@@ -81,10 +82,11 @@
     <br>
 
     <ol>
-      <li>List item 1</li>
-      <li>List item 2</li>
+      <li>Numbered List item 1</li>
+      <li>Numbered List item 2</li>
     </ol>
 
+    <p>here is a form</p>
     <form>
       <label for="name">Name:</label>
       <input type="text" id="name" name="name">
@@ -99,7 +101,7 @@
         <label for="javascript">JavaScript</label>
       </fieldset>
 
-      <textarea id="message" name="message"></textarea>
+     
 
       <datalist id="browsers">
         <option value="Chrome">
@@ -112,6 +114,9 @@
       <label for="browser">Choose your browser:</label>
       <input list="browsers" id="browser" name="browser">
 
+      <br>
+
+      <p>You must choose one. Will it be fruit or veggie?</p>
       <select>
         <optgroup label="Fruits">
           <option value="apple">Apple</option>
@@ -125,6 +130,7 @@
         </optgroup>
       </select>
 
+      <p>here's a details </p>
       <details>
         <summary>More details</summary>
         <p>Additional information.</p>
@@ -137,29 +143,34 @@
       </template>
     </form>
 
+    <br>
+
     <table>
-      <caption>Table Caption</caption>
+      <caption>This is a table</caption>
       <colgroup>
         <col>
         <col>
       </colgroup>
       <thead>
         <tr>
-          <th>Header 1</th>
-          <th>Header 2</th>
+          <th>Column1</th>
+          <th>Column2</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Data 1</td>
-          <td>Data 2</td>
+          <td>Data1</td>
+          <td>Data3</td>
         </tr>
       </tbody>
     </table>
 
+    <p>What happened to Data2? Anyway, heres a figure, which is some self-contained content 
+    that can be addressed and altered as a whole unit. Here we use a picture of flowers, and give it a caption.</p>
+
     <figure>
-      <img src="image.jpg" alt="Image">
-      <figcaption>Image Caption</figcaption>
+      <img src="src/flowers.jpg" alt="Image">
+      <figcaption>Flowers</figcaption>
     </figure>
   </main>
 
