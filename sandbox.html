@@ -80,21 +80,21 @@
     </svg>
 
     <br>
-     <p>below this we use canvas with a little javascript usage to draw a linear gradient</p>
-    <canvas id="myCanvas" width="200" height="100" >
-    </canvas>
+     <p>Below this, we use the canvas element with a little JavaScript usage to draw a linear gradient:</p>
+    <canvas id="myCanvas" width="200" height="100"></canvas>
+
     <script>
-      var c = document.getElementById("myCanvas");
-      var ctx = c.getContext("2d");
-      
+      const canvas = document.getElementById('myCanvas');
+      const ctx = canvas.getContext('2d');
+
       // Create gradient
-      var grd = ctx.createLinearGradient(0, 0, 200, 0);
-      grd.addColorStop(0, "red");
-      grd.addColorStop(1, "white");
-      
+      const gradient = ctx.createLinearGradient(0, 0, 200, 0);
+      gradient.addColorStop(0, 'red');
+      gradient.addColorStop(1, 'white');
+
       // Fill with gradient
-      ctx.fillStyle = grd;
-      ctx.fillRect(10, 10, 150, 80);
+      ctx.fillStyle = gradient;
+      ctx.fillRect(0, 0, 200, 100);
     </script>
 
     <br>
